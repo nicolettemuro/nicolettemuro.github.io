@@ -1,0 +1,32 @@
+/* THIS IS A GLOBAL STYLE */
+
+body {color: aquamarine;
+      font-family: "Times New Roman", serif;
+}
+
+/* THIS ARE OTHER */
+
+h1 { color: black;
+   font-size: 64px;
+   font-weight: "bold";
+}
+
+h2 , b {color: hotpink;
+text-align: "center";
+font-size: 32px;
+font-family: Arial, sans-serif;
+}
+
+b { color: hotpink;
+  text-decoration: line-through;
+  font-size: 14px;
+  ]
+
+  p { */ color: aquamarine;*/
+    font-size: 18px;
+    */ font-family: "Times New Roman", serif; */
+}
+
+img {max-width: 600px;
+     max-height: auto;
+}
