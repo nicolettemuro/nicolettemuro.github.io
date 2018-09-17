@@ -30,3 +30,16 @@ b { color: hotpink;
 img {max-width: 600px;
      max-height: auto;
 }
+
+p {color:deeppink;
+}
+
+<html>
+  <head>
+    <title>Random Photos</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <p>This paragraph will be deeppink.</p>
+  </body>
+</html>
