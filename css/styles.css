@@ -1,4 +1,4 @@
-/* This is my navigation bar */ 
+/* This is my navigation bar */
 .clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;  }
@@ -154,4 +154,9 @@ a:hover {
 
 img {max-width: 600px;
      max-height: auto;
+}
+
+
+.img-headshot {
+	width:300px; 
 }
