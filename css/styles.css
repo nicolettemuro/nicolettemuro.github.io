@@ -150,13 +150,17 @@ a:hover {
 	color: #black;
 }
 
+* {
+	margin: 0;
+	padding: 0;
 }
 
-img {max-width: 600px;
-     max-height: auto;
+.wrapper {
+	margin: 0 auto;
+	width: 1000px;
 }
 
 
-.img-headshot {
-	width:300px; 
-}
+.img-myheadshot {
+	width: 300px;
+} 
