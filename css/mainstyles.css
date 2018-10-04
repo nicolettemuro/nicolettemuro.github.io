@@ -1,0 +1,154 @@
+/******************************************
+FONTS
+Sans-serif / serif combination
+font-family: 'Open Sans', sans-serif;
+font-family: 'Playfair Display', sans-serif; 700, 400
+
+Pairings, weights and sizes
+- h1, h2, h3, figcaption, blockquote: 'Open Sans';
+- p: 'Playfair Display'
+
+COLORS
+body color: black, background-color: white
+h1, h2, h3, figcaption, blockquote, p color: black
+a color DeepPink1 text decoration: none
+a:hover text-decoration: underline
+********************************************/
+
+/******************************************************
+TABLE OF CONTENTS
+1. Global styles (things that apply to all elements of site: general display, general margin, general font)
+2. Text and headlines
+3. Layouts
+******************************************************/
+
+
+/* 1. Global styles (things that apply to all elements of site: general display, general margin, general font) */
+
+/*Make everything inside the <html> act as a block.
+box-sizing: used to tell the browser what the sizing properties (width and height) should include.
+border-box: The width and height properties (and min/max properties) includes content, padding and border, but not the margin */
+
+html {
+  box-sizing: border-box;
+}
+
+/* The asterisk * used below means wildcard or affect everything.
+box-sizing: inherit, means inherit the property border-box from its parent element html.
+Check what the pseudo elements :before and :after are for https://www.w3schools.com/CSS/css_pseudo_elements.asp */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+body {
+  color: black;
+  background-color: white;
+}
+
+/* 2. Text and headlines */
+
+h1, h2, h3, figcaption, blockquote {
+  font-family: 'Open Sans', sans-serif;
+  }
+
+h1 {
+  font-size: 64px;
+  line-height: 1.5;
+  padding: 20px 40px; /*TRBLE Top right bottom left */
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 1.5;
+  padding: 20px 40px; /*TRBLE Top right bottom left */
+}
+
+h3 {
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 20px 40px; /*TRBLE Top right bottom left */
+}
+
+p {
+  font-family:'Playfair Display', serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+figcaption {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.3;
+  padding-top: 10px;
+}
+
+blockquote {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+}
+
+a {
+  color: DeepPink1;
+  text-decoration: none;
+ }
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+
+/* 3. Layout */
+
+header {
+  background-size: cover;
+  max-width: 100%;
+  text-align: center;/* align all text inside header to the center*/
+}
+
+/* Navigation styles */
+nav {
+  text-align: center;
+  padding: 10px 0px 10px 0px; /* Top, right, bottom, left */
+  width: 100%;/*Make navigation 100% width of the viewport*/
+}
+
+/*Nav list of links aligned horizontal*/
+
+li {
+  display: inline;
+  padding: 5px 10px 5px 10px;
+}    /* Display: Every HTML element has a default value for display.
+    Usually it's either "block" or "inline". */
+
+
+article {
+  max-width: 700px;
+  padding: 10px;/*give it padding all around*/
+  margin: auto;  /* set the margin property to auto to horizontally center the element  within its container.*/
+}
+
+#myavatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+img {
+  max-width: 100%;
+  height: auto; /* adjust the height of image to the max-width */
+}
+
+
+footer {
+  max-width: 100%;
+  text-align: center;
+}
