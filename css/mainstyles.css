@@ -44,6 +44,7 @@ Check what the pseudo elements :before and :after are for https://www.w3schools.
 
 
 body {
+  /* this is the body text and background color */
   color: black;
   background-color: white;
 }
@@ -53,11 +54,13 @@ body {
 h1, h2, h3, figcaption, blockquote {
   font-family: 'Open Sans', sans-serif;
   }
+  /* The fonts used are open sans and sans-serif */
 
 h1 {
   font-size: 64px;
   line-height: 1.5;
   padding: 20px 40px; /*TRBLE Top right bottom left */
+  /* The font size and height for the content */
 }
 
 h2 {
@@ -79,6 +82,7 @@ p {
   font-weight: normal;
   line-height: 1.5;
 }
+/* The font and size for the paragraphs */
 
 figcaption {
   font-size: 14px;
@@ -87,6 +91,7 @@ figcaption {
   line-height: 1.3;
   padding-top: 10px;
 }
+/* The font and size of the caption text */
 
 blockquote {
   font-size: 28px;
@@ -95,7 +100,7 @@ blockquote {
   line-height: 1.5;
   text-align: center;
 }
-
+/* font size and style for the block quote */
 a {
   color: #ff00ff;
   text-decoration: none;
@@ -113,6 +118,7 @@ header {
   max-width: 100%;
   text-align: center;/* align all text inside header to the center*/
 }
+/* text size and width for the header /*
 
 /* Navigation styles */
 nav {
@@ -135,7 +141,6 @@ article {
   padding: 10px;/*give it padding all around*/
   margin: auto;  /* set the margin property to auto to horizontally center the element  within its container.*/
 }
-
 #myavatar {
   width: 60px;
   height: 60px;
@@ -155,9 +160,30 @@ img {
   max-width: 100%;
   height: auto; /* adjust the height of image to the max-width */
 }
+/* width and height of the image /*
+
+/* Special container for images inside divs with class
+IUSIONG FLOATS. MORE INFO
+https://developer.mozilla.org/en-US/docs/Web/CSS/float */
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+/* width and padding of the columns /*
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* CLOSE SPECIAL CONTAINER */
 
 
 footer {
   max-width: 100%;
   text-align: center;
 }
+/* this is the footer--end of content /*
